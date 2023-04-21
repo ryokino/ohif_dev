@@ -3,17 +3,17 @@
   "name": "ohif-viewer",
   "builds": [
     {
-      "src": "package.json",
+      "src": "platform/viewer/package.json",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "dist"
+        "distDir": "platform/viewer/dist"
       }
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/dist/$1"
+      "dest": "/platform/viewer/dist/$1"
     }
   ]
 }

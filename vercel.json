@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "projects": [
+    {
+      "name": "ohif-viewer",
+      "root": "platform/viewer",
+      "builds": [
+        {
+          "src": "package.json",
+          "use": "@vercel/node",
+          "config": {
+            "outputDirectory": "dist"
+          }
+        }
+      ]
+    }
+  ]
+}
